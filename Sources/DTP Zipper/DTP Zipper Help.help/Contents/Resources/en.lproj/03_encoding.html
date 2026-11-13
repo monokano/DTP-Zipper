@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="Encoding">
+<title>Encoding</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipper Help</a> › Encoding</p>
+<h1>Encoding</h1>
+<p>In DTP Zipper, you can choose the encoding (character code) of the names stored in the ZIP file: UTF-8 or Shift_JIS.</p>
+
+<h2>Which to Choose</h2>
+<dl>
+  <dt>UTF-8 (default, recommended)</dt>
+  <dd>An encoding whose names don't become garbled when extracted on either Windows or Mac. Windows 8 and later and macOS support it as standard. Names don't become garbled even when the system language isn't Japanese. There are almost no restrictions on characters, so you can use ①, 髙, emoji, and more. Unless you have a particular reason, choose UTF-8.</dd>
+  <dt>Shift_JIS</dt>
+  <dd>Use this only when the recipient extracts files with an older app that doesn't support UTF-8 ZIP files, such as Lhaplus. DTP Zipper compresses only when every name won't become garbled on either Japanese Windows or Mac. As a result, the available characters are limited.</dd>
+</dl>
+<div class="warning">
+  <strong>Important</strong>
+  Even on Windows, Shift_JIS ZIP files become garbled in these environments:
+  <ul>
+    <li>The system language isn't Japanese (the ANSI code page isn't CP932).</li>
+    <li>The system language is Japanese, but "Beta: Use Unicode UTF-8 for worldwide language support" is turned on.</li>
+  </ul>
+</div>
+
+<h2>Characters That May Be Garbled on Windows or Mac</h2>
+<p>DTP Zipper creates ZIP files whose names don't become garbled on either Windows or Mac. So when the encoding is Shift_JIS, it doesn't compress names containing characters such as ①, 髙, the wave dash 〜, emoji, or user-defined characters. Fix the name in the Finder, or choose UTF-8.</p>
+<p>For the list of these characters, see <a href="05_issues.html#garbled">Characters That May Be Garbled</a>.</p>
+
+<h2 id="composition">Composing Dakuten and Handakuten Marks</h2>
+<p>On a Mac, a Japanese character such as が in a file name can automatically be split into two parts: か and a voicing mark (a combining character sequence). DTP Zipper composes combining character sequences into single characters in the ZIP file, with UTF-8 as well as Shift_JIS. This doesn't break links in Adobe DTP apps.</p>
+<p>Compatibility ideographs, which normal composing would change into unified ideographs, are stored as they are without composing.</p>
+</body>
+</html>

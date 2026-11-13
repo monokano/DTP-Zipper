@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="Troubleshooting">
+<title>Troubleshooting</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipper Help</a> › Troubleshooting</p>
+<h1>Troubleshooting</h1>
+
+<h2>Common Situations</h2>
+<dl>
+  <dt>Names are garbled after extracting</dt>
+  <dd>The app used to extract the file may not support UTF-8 ZIP files. Set the encoding to Shift_JIS and create the ZIP file again. For details, see <a href="03_encoding.html">Encoding</a>.</dd>
+
+  <dt>Nothing happens when I drop items</dt>
+  <dd>Drops aren't accepted during processing or while the Name Check window is open. Wait for processing to finish, or click Cancel, and then drop the items.</dd>
+
+  <dt>The app quits when compressing finishes</dt>
+  <dd>Quit When Done is turned on. To keep compressing more items, turn it off. Double-click the app to open it and change the setting.</dd>
+
+  <dt>Some files are missing after extracting on Windows</dt>
+  <dd>Aliases, symbolic links, and invisible items inside folders don't go into the ZIP file. See <a href="02_zip.html">What Isn't Included in the ZIP File</a>.</dd>
+</dl>
+
+<h2>When an Error Message Appears</h2>
+<p>When an error occurs, compressing stops. DTP Zipper doesn't create a ZIP file with items missing.</p>
+<dl>
+  <dt>There are no items to compress.</dt>
+  <dd>Appears when nothing can go into the ZIP file, for example when you drop only aliases or symbolic links. Drop the original files or folders.</dd>
+
+  <dt>The item could not be read. / The file could not be read.</dt>
+  <dd>The item shown couldn't be read. Check its access permissions and the connection to the server or external disk, then drop it again.</dd>
+
+  <dt>The file changed while it was being compressed.</dt>
+  <dd>Another app changed the file during compressing. Check which app is editing the file, then drop it again.</dd>
+
+  <dt>The ZIP file could not be written.</dt>
+  <dd>Check the free space and the connection of the save location.</dd>
+
+  <dt>A path is too long to store in a ZIP file.</dt>
+  <dd>Use fewer folder levels or shorter names.</dd>
+</dl>
+</body>
+</html>

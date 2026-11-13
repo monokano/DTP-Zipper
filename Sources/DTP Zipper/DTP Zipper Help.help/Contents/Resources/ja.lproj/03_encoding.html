@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="エンコーディング">
+<title>エンコーディング</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipperヘルプ</a> › エンコーディング</p>
+<h1>エンコーディング</h1>
+<p>DTP Zipperでは、ZIPファイルに格納する名前のエンコーディング（文字コード）を「UTF-8」と「Shift_JIS」から選べます。</p>
+
+<h2>どちらを選ぶか</h2>
+<dl>
+  <dt>UTF-8（初期状態・推奨）</dt>
+  <dd>WindowsとMacのどちらで解凍しても文字化けしない文字コードです。Windows 8以降とmacOSが標準で対応しています。システムの言語が日本語でなくても文字化けしません。文字の制限もほとんどなく、①、髙、絵文字なども使えます。特に理由がなければ、UTF-8を選んでください。</dd>
+  <dt>Shift_JIS</dt>
+  <dd>Lhaplusのように、UTF-8のZIPファイルに対応していない古いアプリで解凍する相手のときだけ使います。日本語環境のWindowsとMacのどちらでも文字化けしない名前のときだけ圧縮します。その分、使える文字は限られます。</dd>
+</dl>
+<div class="warning">
+  <strong>注意</strong>
+  Shift_JISのZIPファイルは、Windowsでも次の環境では文字化けします。
+  <ul>
+    <li>システムの言語が日本語以外の環境（ANSIコードページがCP932以外）</li>
+    <li>システムの言語が日本語でも、「ベータ: ワールドワイド言語サポートでUnicode UTF-8を使用」をオンにした環境</li>
+  </ul>
+</div>
+
+<h2>Windows／Macで文字化けするおそれのある文字</h2>
+<p>DTP Zipperは、WindowsとMacのどちらで解凍しても文字化けしないZIPファイルを作ります。そのため、エンコーディングがShift_JISのときは、①、髙、波ダッシュ 〜、絵文字、ユーザー定義外字などを含む名前を圧縮しません。Finderで名前を直すか、UTF-8を選んでください。</p>
+<p>該当する文字の一覧は、<a href="05_issues.html#garbled">文字化けのおそれがある文字</a>をご覧ください。</p>
+
+<h2 id="composition">濁点／半濁点の合成</h2>
+<p>Macでは、ファイル名の「が」が自動的に「か＋濁点」の2文字（結合文字列）に分かれることがあります。DTP ZipperはShift_JISだけでなくUTF-8でも、結合文字列を1文字に合成してZIPに格納します。AdobeのDTPアプリでは、1文字に合成してもリンクは切れません。</p>
+<p>なお、通常の合成処理では統合漢字に変わってしまう互換漢字は、合成せずにそのまま格納します。</p>
+</body>
+</html>

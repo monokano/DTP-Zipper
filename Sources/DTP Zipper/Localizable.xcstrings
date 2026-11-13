@@ -1,0 +1,736 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@%2$@"
+          }
+        }
+      }
+    },
+    "%lld items" : {
+      "comment" : "Item count while scanning",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld item"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld items"
+                }
+              }
+            }
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld項目"
+          }
+        }
+      }
+    },
+    "A name could not be converted." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前を変換できませんでした。"
+          }
+        }
+      }
+    },
+    "A path is too long to store in a ZIP file." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスが長すぎるため、ZIPファイルに格納できません。"
+          }
+        }
+      }
+    },
+    "Aliases and symbolic links aren't included in the ZIP file" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エイリアス／シンボリックリンクはZIPファイルに含まない"
+          }
+        }
+      }
+    },
+    "All items were excluded." : {
+      "comment" : "Alert: nothing to compress",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての項目が除外されました。"
+          }
+        }
+      }
+    },
+    "Archive" : {
+      "comment" : "Base name of the ZIP file when several items are dropped",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アーカイブ"
+          }
+        }
+      }
+    },
+    "Back" : {
+      "comment" : "Help window toolbar",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "戻る"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        }
+      }
+    },
+    "Character incompatible between Windows and Mac" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WindowsとMacで互換性のない文字"
+          }
+        }
+      }
+    },
+    "Character not allowed on Windows" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Windows使用不可文字"
+          }
+        }
+      }
+    },
+    "Character not in Shift_JIS" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shift_JISにない文字"
+          }
+        }
+      }
+    },
+    "Character that may be garbled" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文字化けのおそれがある文字"
+          }
+        }
+      }
+    },
+    "Check Again" : {
+      "comment" : "Issue list button",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再チェック"
+          }
+        }
+      }
+    },
+    "Checking…" : {
+      "comment" : "Issue list footer",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チェック中…"
+          }
+        }
+      }
+    },
+    "Click Continue to compress." : {
+      "comment" : "Issue list: no problems remain",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "［続行］をクリックすると圧縮します。"
+          }
+        }
+      }
+    },
+    "Compatibility ideograph (may change to a unified ideograph)" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "互換漢字（統合漢字に変わるおそれあり）"
+          }
+        }
+      }
+    },
+    "Compressing…" : {
+      "comment" : "Progress",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圧縮中…"
+          }
+        }
+      }
+    },
+    "Contains inappropriate names." : {
+      "comment" : "Issue list heading",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不適切な名前が含まれています。"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "comment" : "Issue list button",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続行"
+          }
+        }
+      }
+    },
+    "Control character" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "制御文字"
+          }
+        }
+      }
+    },
+    "Drop Folders or Files" : {
+      "comment" : "Drop window",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォルダ・ファイルをドロップ"
+          }
+        }
+      }
+    },
+    "DTP Zipper Help" : {
+      "comment" : "Help menu item and help window title",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DTP Zipper ヘルプ"
+          }
+        }
+      }
+    },
+    "Encoding:" : {
+      "comment" : "Setting",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エンコーディング："
+          }
+        }
+      }
+    },
+    "Ends with a space or period" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "末尾が空白またはピリオド"
+          }
+        }
+      }
+    },
+    "File whose data would be lost" : {
+      "comment" : "Issue window: problem of a resource-fork-only file not recognized as a font",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データが消失するファイル"
+          }
+        }
+      }
+    },
+    "Font whose data would be lost" : {
+      "comment" : "Issue window: problem of a font",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データが消失するフォント"
+          }
+        }
+      }
+    },
+    "Fonts (%lld)" : {
+      "comment" : "Issue window: tab with the number of items",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォント（%lld）"
+          }
+        }
+      }
+    },
+    "For older apps like Lhaplus" : {
+      "comment" : "Note next to the encoding pop-up",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lhaplusのような古いアプリ用"
+          }
+        }
+      }
+    },
+    "Forward" : {
+      "comment" : "Help window toolbar",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進む"
+          }
+        }
+      }
+    },
+    "Full support on Windows 8+" : {
+      "comment" : "Note next to the encoding pop-up",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Windows 8以降で完全対応"
+          }
+        }
+      }
+    },
+    "Help" : {
+      "comment" : "Dock menu item that opens the help window",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヘルプ"
+          }
+        }
+      }
+    },
+    "Issue Type" : {
+      "comment" : "Issue window: accessibility label of the tabs",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "問題の種類"
+          }
+        }
+      }
+    },
+    "May not extract correctly. Putting it in a folder avoids this" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解凍時に異常のおそれ。フォルダに入れると回避できる"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "comment" : "Issue list column",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前"
+          }
+        }
+      }
+    },
+    "Name Check" : {
+      "comment" : "Issue list window title",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前のチェック"
+          }
+        }
+      }
+    },
+    "Names (%lld)" : {
+      "comment" : "Issue window: tab with the number of items",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前（%lld）"
+          }
+        }
+      }
+    },
+    "No problems were found." : {
+      "comment" : "Issue list heading",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "問題は見つかりませんでした。"
+          }
+        }
+      }
+    },
+    "Password" : {
+      "comment" : "Setting below the drop area: make a password-protected ZIP (checkbox, followed by the password field)",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワード"
+          }
+        }
+      }
+    },
+    "Path too long" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長すぎるパス"
+          }
+        }
+      }
+    },
+    "Platform-dependent character or similar" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "機種依存文字など"
+          }
+        }
+      }
+    },
+    "Please review these warnings." : {
+      "comment" : "Issue list heading",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "警告を確認してください。"
+          }
+        }
+      }
+    },
+    "Problem" : {
+      "comment" : "Issue list column",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "問題"
+          }
+        }
+      }
+    },
+    "Quit When Done" : {
+      "comment" : "Setting below the drop area: quit the app after compressing",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了後に自動終了"
+          }
+        }
+      }
+    },
+    "Reserved name on Windows" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Windows予約名"
+          }
+        }
+      }
+    },
+    "Same name except for case at the same level" : {
+      "comment" : "Issue list: name collision",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同階層に大文字小文字違いの同名あり"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "comment" : "Button of the panel that chooses where to save",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        }
+      }
+    },
+    "Scanning…" : {
+      "comment" : "Progress",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキャン中…"
+          }
+        }
+      }
+    },
+    "Shift_JIS" : {
+      "comment" : "Encoding name",
+      "shouldTranslate" : false
+    },
+    "Show in Finder" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finderに表示"
+          }
+        }
+      }
+    },
+    "Some fonts would break when compressed." : {
+      "comment" : "Issue window: heading",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圧縮すると壊れるフォントがあります。"
+          }
+        }
+      }
+    },
+    "Some items can't be compressed." : {
+      "comment" : "Issue window: heading when fonts and names both have problems",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圧縮できない項目があります。"
+          }
+        }
+      }
+    },
+    "The file changed while it was being compressed." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圧縮中にファイルが変更されました。"
+          }
+        }
+      }
+    },
+    "The file could not be compressed." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルを圧縮できませんでした。"
+          }
+        }
+      }
+    },
+    "The file could not be read." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルを読み込めませんでした。"
+          }
+        }
+      }
+    },
+    "The item could not be read." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目を読み込めませんでした。"
+          }
+        }
+      }
+    },
+    "The ZIP file can't be saved in the original folder. Choose where to save it." : {
+      "comment" : "Panel that chooses where to save",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "元のフォルダにはZIPファイルを保存できません。保存先を選択してください。"
+          }
+        }
+      }
+    },
+    "The ZIP file could not be created." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ZIPファイルを作成できませんでした。"
+          }
+        }
+      }
+    },
+    "The ZIP file could not be written." : {
+      "comment" : "Error alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ZIPファイルに書き込めませんでした。"
+          }
+        }
+      }
+    },
+    "The ZIP file was created." : {
+      "comment" : "Message when compression has finished",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ZIPファイルを作成しました"
+          }
+        }
+      }
+    },
+    "There are no items to compress." : {
+      "comment" : "Alert",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "圧縮する項目がありません。"
+          }
+        }
+      }
+    },
+    "These names may become garbled when extracted." : {
+      "comment" : "Issue list explanation",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解凍すると文字化けなどの危険があります。"
+          }
+        }
+      }
+    },
+    "They would break if zipped for Windows. Use the standard macOS compression." : {
+      "comment" : "Issue window: what to do about fonts",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Windows用にZIP圧縮すると壊れます。macOSの標準機能で圧縮してください。"
+          }
+        }
+      }
+    },
+    "User-defined character" : {
+      "comment" : "Issue list",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザー定義外字"
+          }
+        }
+      }
+    },
+    "UTF-8" : {
+      "comment" : "Encoding name",
+      "shouldTranslate" : false
+    },
+    "You can continue, but check the items below first." : {
+      "comment" : "Issue list explanation",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続行できますが、先に以下の項目を確認してください。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

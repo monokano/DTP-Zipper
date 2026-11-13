@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="DTP Zipper について">
+<title>DTP Zipper について</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipperヘルプ</a> › DTP Zipperについて</p>
+<h1>DTP Zipperについて</h1>
+
+<h2>何をするアプリか</h2>
+<p>Macで作ったZIPファイルをWindowsで解凍すると、ファイル名が文字化けすることがあります。DTP Zipperは、WindowsでもMacでも文字化けしないようにZIPファイルを作ります。</p>
+<p>ZIPファイルには、Windowsでは不要な「__MACOSX」フォルダを作りません。</p>
+
+<h2>名前を変更しません</h2>
+<p>DTPのデータは、画像などのファイルをリンクで配置しています。ファイル名が変わるとリンクが切れるため、DTP Zipperは名前を自動で変更しません。</p>
+<p>解凍すると別の文字になったり、正しく解凍できなかったりするおそれがあるときは、圧縮せずに知らせます。名前はご自身でFinderで直し、DTPアプリでリンクを更新してください。元のファイルやフォルダには一切手を加えません。</p>
+<div class="note">
+  <strong>メモ</strong>
+  例外として、濁点や半濁点が分かれた文字（結合文字列）は、常に1文字に合成してZIPに格納します。AdobeのDTPアプリでは、リンクは切れません。詳しくは<a href="03_encoding.html#composition">エンコーディング</a>をご覧ください。
+</div>
+
+<h2>基本の流れ</h2>
+<ol class="steps">
+  <li>フォルダやファイルを、DTP Zipperのウインドウかアプリのアイコンにドロップします。</li>
+  <li>DTP Zipperがすべての名前をチェックします。問題がなければ、そのまま圧縮します。</li>
+  <li>問題が見つかると<a href="04_check.html">「名前のチェック」ウインドウ</a>が開きます。名前を直して「再チェック」をクリックします。警告だけのときは、確認して「続行」をクリックすれば圧縮できます。</li>
+  <li>ドロップした項目と同じフォルダにZIPファイルができます。</li>
+</ol>
+</body>
+</html>

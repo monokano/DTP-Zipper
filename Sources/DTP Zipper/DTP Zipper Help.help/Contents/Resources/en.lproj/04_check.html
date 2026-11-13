@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="Name Check">
+<title>Name Check</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipper Help</a> › Name Check</p>
+<h1>Name Check</h1>
+<p>Before compressing, DTP Zipper checks all the files and folders you dropped, including everything inside the folders. If it finds problems, it lists them in the Name Check window. If there are none, it compresses them right away.</p>
+
+<h2>Stops and Warnings</h2>
+<dl>
+  <dt>Stop (red icon)</dt>
+  <dd>A problem that prevents compressing, such as a name that might change when extracted. You can't click Continue until it's fixed.</dd>
+  <dt>Warning (yellow icon)</dt>
+  <dd>A problem you can review and then compress anyway. If there are only warnings, you can click Continue.</dd>
+</dl>
+<p>For what each one means and what to do, see <a href="05_issues.html">Problems and Solutions</a>.</p>
+
+<h2>Reading the List</h2>
+<dl>
+  <dt>Name</dt>
+  <dd>Shows the name with the same icon as in the Finder. Problem characters appear in red. Emoji appear with a red background. Characters you can't see, such as a trailing space or a control character, appear as a red ▁.</dd>
+  <dt>Problem</dt>
+  <dd>Describes the problem. An item with several problems takes up several rows.</dd>
+  <dt>Show in Finder</dt>
+  <dd>Selects the item in the Finder. You can also double-click the row, or right-click it and choose Show in Finder.</dd>
+</dl>
+<p>If there are both fonts that would break when compressed and problems with names, they're divided into Fonts and Names tabs. Each tab shows the number of items.</p>
+
+<h2>Fixing Problems</h2>
+<ol class="steps">
+  <li>Click Show in Finder.</li>
+  <li>Fix the name in the Finder. You can leave the Name Check window open.</li>
+  <li>Click Check Again. If there are no more problems, compressing starts right away.</li>
+</ol>
+
+<h2>Changing the Encoding</h2>
+<p>While the Names list is showing, you can change the <a href="03_encoding.html">encoding</a> in this window. For example, if ① stopped the check with Shift_JIS, switching to UTF-8 lets you compress.</p>
+<p>When you change it, the check runs again automatically. Even if the problems are gone, compressing doesn't start by itself: the window shows "No problems were found." Click Continue to compress.</p>
+
+<h2>Buttons</h2>
+<dl>
+  <dt>Cancel</dt>
+  <dd>Goes back to waiting for a drop without compressing. If the app was opened by dropping items onto its icon, it quits instead. Closing the window does the same.</dd>
+  <dt>Check Again</dt>
+  <dd>Checks the same items again. If there are no more problems, compressing starts.</dd>
+  <dt>Continue</dt>
+  <dd>Starts compressing. You can't click it while there are stops.</dd>
+</dl>
+</body>
+</html>

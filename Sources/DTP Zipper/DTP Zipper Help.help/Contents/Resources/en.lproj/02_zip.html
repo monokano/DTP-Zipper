@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="Creating ZIP Files">
+<title>Creating ZIP Files</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipper Help</a> › Creating ZIP Files</p>
+<h1>Creating ZIP Files</h1>
+
+<h2>Dropping Items</h2>
+<p>You can drop both folders and files. If you drop several items at once, they're combined into one ZIP file.</p>
+<dl>
+  <dt>Drop onto the window</dt>
+  <dd>Double-click the app to open it, then drop items onto the window that says "Drop Folders or Files."</dd>
+  <dt>Drop onto the app icon</dt>
+  <dd>If the app isn't running, it compresses the items in a small window that shows only the progress. The app icon also accepts drops while the app is running.</dd>
+</dl>
+<p>Nothing happens if you drop items during processing or while the Name Check window is open.</p>
+
+<h2>Settings</h2>
+<p>The settings are at the bottom of the window. All settings except the password are kept for next time and are also used when you drop items onto the app icon. You can't change them during processing.</p>
+<dl>
+  <dt>Encoding</dt>
+  <dd>Chooses the format of the names stored in the ZIP file. The default is UTF-8. For details, see <a href="03_encoding.html">Encoding</a>.</dd>
+  <dt>Quit When Done</dt>
+  <dd>When on, the app quits after compressing. It's on by default. When off, the app shows "The ZIP file was created." and you can drop more items.</dd>
+  <dt>Password</dt>
+  <dd>Turn it on and type a password in the field to the right to make a password-protected ZIP file. It can also be extracted with File Explorer on Windows by entering the password. You can use ASCII letters, numbers, symbols, and spaces. The password isn't saved; each time you open the app, it's off and empty. If you drop items while it's on and empty, the password field is selected.</dd>
+</dl>
+<p>When compressing is done, the new ZIP file is selected and shown in the Finder.</p>
+<div class="note">
+  <strong>Note</strong>
+  The first time, you're asked whether to allow DTP Zipper to control the Finder. Even if you don't allow it, the ZIP file is selected in a new Finder window. If you allow it, DTP Zipper tries to select the file without opening a new window, in the Finder window showing the original items (or on the desktop if the items are on the desktop). To allow it later, open System Settings, choose Privacy &amp; Security &gt; Automation, and turn on Finder under DTP Zipper.
+</div>
+
+<h2>Where ZIP Files Are Saved and How They're Named</h2>
+<dl>
+  <dt>Location</dt>
+  <dd>The same folder as the items you dropped. If that location can't be written to, such as a CD-R, a panel opens so you can choose another. If you cancel the panel, the app goes back to waiting for a drop.</dd>
+  <dt>One item</dt>
+  <dd>".zip" is added to the item's name. The file extension stays, so "photo.jpg" becomes "photo.jpg.zip."</dd>
+  <dt>Several items</dt>
+  <dd>The name is "Archive.zip."</dd>
+  <dt>A ZIP file with the same name already exists</dt>
+  <dd>The existing file isn't overwritten. A number is added instead, as in "Archive 2.zip" and "Archive 3.zip."</dd>
+</dl>
+
+<h2>Stopping Partway</h2>
+<p>Click Cancel during processing to go back to waiting for a drop. If the app was opened by dropping items onto its icon, it quits instead.</p>
+<p>If you close the drop window or press <kbd>⌘Q</kbd> during processing, the app stops and quits without asking. In every case, no partial ZIP file is left behind.</p>
+
+<h2>What Isn't Included in the ZIP File</h2>
+<ul>
+  <li><strong>Invisible items inside folders:</strong> Items whose names begin with ".", the "Icon" files that hold custom icons, and so on. An item you drop directly is included even if it's invisible.</li>
+  <li><strong>Symbolic links and aliases:</strong> The original items they point to aren't included either. A <a href="05_issues.html#excluded">warning</a> tells you they were left out.</li>
+  <li><strong>Resource forks and extended attributes:</strong> Fonts with data in a resource fork would break, so DTP Zipper tells you instead of compressing. For details, see <a href="05_issues.html#fonts">Fonts That Break When Compressed</a>.</li>
+</ul>
+<p>Empty folders are kept. Packages such as ".app" are included as folders, along with their contents.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="About DTP Zipper">
+<title>About DTP Zipper</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipper Help</a> › About DTP Zipper</p>
+<h1>About DTP Zipper</h1>
+
+<h2>What the App Does</h2>
+<p>When a ZIP file made on a Mac is extracted on Windows, its file names can become garbled. DTP Zipper creates ZIP files whose names don't become garbled on either Windows or Mac.</p>
+<p>The ZIP file doesn't include a "__MACOSX" folder, which isn't needed on Windows.</p>
+
+<h2>Names Are Never Changed</h2>
+<p>DTP documents place images and other files as links. Because changing a file name breaks the link, DTP Zipper never changes names automatically.</p>
+<p>If a name might turn into different characters, or might not extract correctly, DTP Zipper tells you instead of compressing. Fix the name yourself in the Finder, then update the link in your DTP app. Your original files and folders are never modified.</p>
+<div class="note">
+  <strong>Note</strong>
+  As an exception, characters with separated dakuten or handakuten marks (Japanese voicing marks, stored as combining character sequences) are always composed into single characters in the ZIP file. This doesn't break links in Adobe DTP apps. For details, see <a href="03_encoding.html#composition">Encoding</a>.
+</div>
+
+<h2>Basic Steps</h2>
+<ol class="steps">
+  <li>Drop folders or files onto the DTP Zipper window or the app icon.</li>
+  <li>DTP Zipper checks every name. If there are no problems, it starts compressing.</li>
+  <li>If problems are found, the <a href="04_check.html">Name Check window</a> opens. Fix the names, then click Check Again. If there are only warnings, you can review them and click Continue to compress.</li>
+  <li>The ZIP file is created in the same folder as the items you dropped.</li>
+</ol>
+</body>
+</html>

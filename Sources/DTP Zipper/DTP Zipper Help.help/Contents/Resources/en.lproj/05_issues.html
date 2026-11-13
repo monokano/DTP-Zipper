@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="Problems and Solutions">
+<title>Problems and Solutions</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipper Help</a> › Problems and Solutions</p>
+<h1>Problems and Solutions</h1>
+<p>These messages appear in the Problem column of the Name Check window. They are grouped here by cause.</p>
+<p>A message marked Stop must be fixed before you can compress. With a message marked Warning, you can review it and click Continue to compress.</p>
+
+<h2 id="garbled">Characters That May Be Garbled</h2>
+<p>These appear only when the encoding is Shift_JIS. The characters may be garbled on either Windows or Mac. Fix the name in the Finder, or change the encoding to UTF-8.</p>
+<dl>
+  <dt>Platform-dependent character or similar<span class="level stop">Stop</span></dt>
+  <dd>① ㈱ 髙 﨑 Ⅸ № ～ － ∥ ― ｩ</dd>
+
+  <dt>Character incompatible between Windows and Mac<span class="level stop">Stop</span></dt>
+  <dd>〜 − — ‖ ¢ £ ¬ ‾<br>The wave dash 〜 and the minus sign − are especially common when typing on a Mac.</dd>
+
+  <dt>Character not in Shift_JIS<span class="level stop">Stop</span></dt>
+  <dd>𠮷, é, emoji, and others</dd>
+
+  <dt>User-defined character<span class="level stop">Stop</span></dt>
+  <dd>Characters that a user registered independently (private-use characters, or gaiji). They don't display unless the recipient has the same characters registered, so none of them can be used.</dd>
+</dl>
+<p>When a name has characters of more than one kind, each kind is listed on its own row.</p>
+<div class="note">
+  <strong>Note</strong>
+  The Shift_JIS conversion table maps the ASCII tilde <code>~</code> to a different character, but you can use it in DTP Zipper. It's extracted as <code>~</code> from the ZIP file.
+</div>
+
+<h2 id="software">Names That Depend on the Extracting Software</h2>
+<p>Depending on the software used to extract the ZIP file, these names may not be restored correctly. Both are warnings, so you can review them and compress.</p>
+<dl>
+  <dt>May not extract correctly. Putting it in a folder avoids this<span class="level warn">Warning</span></dt>
+  <dd>Appears only when the encoding is Shift_JIS, when you directly drop a file whose name contains a character such as 表, ソ, or 能. Some software treats these characters as a folder separator, which breaks the name. To avoid this, put the file in a folder and drop the folder. Files inside folders and folder names aren't affected.</dd>
+
+  <dt>Compatibility ideograph (may change to a unified ideograph)<span class="level warn">Warning</span></dt>
+  <dd>Appears only when the encoding is UTF-8. Depending on how the extracting software processes names, a compatibility ideograph may change to a similar-looking unified ideograph. You can compress anyway, but for documents that find links by name, check the names after extracting.</dd>
+</dl>
+
+<h2 id="windows">Names That Can't Be Used on Windows</h2>
+<p>These appear regardless of the encoding. Windows can't use these names or can't handle them correctly. Fix the name in the Finder.</p>
+<dl>
+  <dt>Character not allowed on Windows<span class="level stop">Stop</span></dt>
+  <dd><code>/</code> <code>\</code> <code>¥</code> <code>&lt;</code> <code>&gt;</code> <code>?</code> <code>"</code> <code>|</code> <code>:</code> <code>*</code> can't be used in Windows file names. Replace the character.</dd>
+
+  <dt>Reserved name on Windows<span class="level stop">Stop</span></dt>
+  <dd><code>CON</code>, <code>PRN</code>, <code>AUX</code>, <code>NUL</code>, <code>COM1</code>–<code>COM9</code>, and <code>LPT1</code>–<code>LPT9</code> are used by Windows. This applies regardless of case, and even with an extension, as in <code>con.txt</code>. Choose another name.</dd>
+
+  <dt>Ends with a space or period<span class="level stop">Stop</span></dt>
+  <dd>Windows can't handle a space or period at the end of a name correctly, so it may not extract properly. This applies to both file and folder names. Remove the trailing space or period.</dd>
+
+  <dt>Same name except for case at the same level<span class="level stop">Stop</span></dt>
+  <dd>The same level has items whose names differ only in case, such as <code>A.txt</code> and <code>a.txt</code>. When extracted on Windows, one overwrites the other. Rename one of them.</dd>
+
+  <dt>Control character<span class="level stop">Stop</span></dt>
+  <dd>The name contains a character you can't see, such as a line break or a zero-width space. Retype the name.</dd>
+
+  <dt>Path too long<span class="level warn">Warning</span></dt>
+  <dd>The path inside the ZIP file is 200 characters or longer. The Windows path length limit also counts the path of the folder being extracted to, so extraction may fail. Use fewer folder levels or shorter names.</dd>
+</dl>
+
+<h2 id="excluded">Items Not Included in the ZIP File</h2>
+<p>This appears regardless of the encoding.</p>
+<dl>
+  <dt>Aliases and symbolic links aren't included in the ZIP file<span class="level warn">Warning</span></dt>
+  <dd>Aliases and symbolic links don't go into the ZIP file, and neither do the original items they point to. If you need the originals, put them in the folder. Special items that are neither regular files nor folders are treated the same way.</dd>
+</dl>
+
+<h2 id="fonts">Fonts That Break When Compressed</h2>
+<p>These appear regardless of the encoding. Older font formats, such as Mac font suitcases and Type 1 fonts, keep their data in a resource fork. Resource forks can't be stored in a ZIP file for Windows, so compressing would lose the data and leave an empty file. DTP Zipper tells you instead of compressing.</p>
+<dl>
+  <dt>Font whose data would be lost<span class="level stop">Stop</span></dt>
+  <dd>The file is a font.</dd>
+
+  <dt>File whose data would be lost<span class="level stop">Stop</span></dt>
+  <dd>The file isn't recognized as a font, but likewise has data only in its resource fork. A font that has lost its file type information also shows this message.</dd>
+</dl>
+<p>If your items include these files, don't use DTP Zipper. Compress them with the Compress command in the Finder. Fixing the name won't solve the problem.</p>
+<div class="warning">
+  <strong>Important</strong>
+  Fonts don't break in a ZIP file made with the Compress command in the Finder. However, extracting it on Windows loses the resource fork and leaves an empty file.
+</div>
+<div class="note">
+  <strong>Note</strong>
+  Fonts that keep their data in the data fork, such as OpenType (.otf) and TrueType (.ttf), can be compressed without any problem.
+</div>
+</body>
+</html>

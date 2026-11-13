@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="AppleTitle" content="問題の内容と対処">
+<title>問題の内容と対処</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<p class="breadcrumb"><a href="index.html">DTP Zipperヘルプ</a> › 問題の内容と対処</p>
+<h1>問題の内容と対処</h1>
+<p>「名前のチェック」ウインドウの「問題」の列に表示される内容を、原因ごとにまとめています。</p>
+<p>見出しの右の「停止」は、直すまで圧縮できない問題です。「警告」は、確認のうえで「続行」をクリックすれば圧縮できる問題です。</p>
+
+<h2 id="garbled">文字化けのおそれがある文字</h2>
+<p>エンコーディングがShift_JISのときだけ表示されます。WindowsとMacのどちらかで文字化けするおそれがある文字です。Finderで名前を直すか、エンコーディングをUTF-8に変更してください。</p>
+<dl>
+  <dt>機種依存文字など<span class="level stop">停止</span></dt>
+  <dd>① ㈱ 髙 﨑 Ⅸ № ～ － ∥ ― ｩ</dd>
+
+  <dt>WindowsとMacで互換性のない文字<span class="level stop">停止</span></dt>
+  <dd>〜 − — ‖ ¢ £ ¬ ‾<br>波ダッシュ 〜 と全角マイナス − は、Macで入力すると出やすい文字です。</dd>
+
+  <dt>Shift_JISにない文字<span class="level stop">停止</span></dt>
+  <dd>𠮷 é、絵文字など</dd>
+
+  <dt>ユーザー定義外字<span class="level stop">停止</span></dt>
+  <dd>利用者が独自に登録した文字（私用領域の文字）です。相手の環境に同じ登録がなければ表示されないので、すべて使えません。</dd>
+</dl>
+<p>1つの名前に複数の種類の文字があるときは、種類ごとに行が分かれます。</p>
+<div class="note">
+  <strong>メモ</strong>
+  半角のチルダ <code>~</code> はShift_JISの変換表では別の文字に対応づけられていますが、DTP Zipperでは使えます。ZIPに格納しても <code>~</code> のまま解凍されます。
+</div>
+
+<h2 id="software">解凍するソフトによって変わる名前</h2>
+<p>解凍に使うソフトによっては、名前が正しく戻らないことがあります。どちらも警告なので、確認のうえで圧縮できます。</p>
+<dl>
+  <dt>解凍時に異常のおそれ。フォルダに入れると回避できる<span class="level warn">警告</span></dt>
+  <dd>エンコーディングがShift_JISのときだけ表示されます。「表」「ソ」「能」などを名前に含むファイルを直接ドロップしたときです。一部のソフトでは、これらの文字がフォルダの区切りとして扱われ、名前が壊れます。ファイルをフォルダに入れて、そのフォルダをドロップすると回避できます。フォルダの中のファイルやフォルダ名は問題ありません。</dd>
+
+  <dt>互換漢字（統合漢字に変わるおそれあり）<span class="level warn">警告</span></dt>
+  <dd>エンコーディングがUTF-8のときだけ表示されます。互換漢字は、解凍するソフトの処理によっては見た目のよく似た統合漢字に変わることがあります。そのまま圧縮しても構いませんが、名前でリンクを探すデータでは、解凍後の名前を確認してください。</dd>
+</dl>
+
+<h2 id="windows">Windowsで使えない名前</h2>
+<p>エンコーディングに関係なく表示されます。Windowsでは使えない名前や、正しく扱えない名前です。Finderで名前を直してください。</p>
+<dl>
+  <dt>Windows使用不可文字<span class="level stop">停止</span></dt>
+  <dd><code>/</code> <code>\</code> <code>¥</code> <code>&lt;</code> <code>&gt;</code> <code>?</code> <code>"</code> <code>|</code> <code>:</code> <code>*</code> は、Windowsのファイル名に使えません。別の文字に直してください。</dd>
+
+  <dt>Windows予約名<span class="level stop">停止</span></dt>
+  <dd><code>CON</code>、<code>PRN</code>、<code>AUX</code>、<code>NUL</code>、<code>COM1</code>〜<code>COM9</code>、<code>LPT1</code>〜<code>LPT9</code> はWindowsが使う名前です。大文字小文字を問わず、<code>con.txt</code> のように拡張子が付いていても該当します。別の名前に直してください。</dd>
+
+  <dt>末尾が空白またはピリオド<span class="level stop">停止</span></dt>
+  <dd>Windowsでは、名前の末尾の空白とピリオドを正しく扱えません。ファイル名とフォルダ名のどちらも対象です。末尾の空白やピリオドを削除してください。</dd>
+
+  <dt>同階層に大文字小文字違いの同名あり<span class="level stop">停止</span></dt>
+  <dd><code>A.txt</code> と<code>a.txt</code> のように、大文字小文字だけが違う項目が同じ階層にあります。Windowsで解凍すると、片方が上書きされます。どちらかの名前を変えてください。</dd>
+
+  <dt>制御文字<span class="level stop">停止</span></dt>
+  <dd>改行やゼロ幅スペースなど、目に見えない文字が名前に入っています。名前を入力し直してください。</dd>
+
+  <dt>長すぎるパス<span class="level warn">警告</span></dt>
+  <dd>ZIPの中のパスが200文字以上あります。Windowsのパスの長さの制限には解凍先のフォルダまでのパスも含まれるため、解凍できないことがあります。階層を浅くするか、名前を短くしてください。</dd>
+</dl>
+
+<h2 id="excluded">ZIPに含まれない項目</h2>
+<p>エンコーディングに関係なく表示されます。</p>
+<dl>
+  <dt>エイリアス／シンボリックリンクはZIPファイルに含まない<span class="level warn">警告</span></dt>
+  <dd>エイリアスとシンボリックリンクは、ZIPに入れません。リンク先のファイルも入らないので、必要なら本体をフォルダに入れてください。通常のファイルでもフォルダでもない特殊な項目も同じ扱いです。</dd>
+</dl>
+
+<h2 id="fonts">圧縮すると壊れるフォント</h2>
+<p>エンコーディングに関係なく表示されます。Mac用のフォントスーツケースやType 1フォントなど、古い形式のフォントは、データをリソースフォークに持っています。Windows向けのZIPにはリソースフォークを入れられないので、圧縮するとデータが消えて空のファイルになります。そのため、DTP Zipperは圧縮せずに知らせます。</p>
+<dl>
+  <dt>データが消失するフォント<span class="level stop">停止</span></dt>
+  <dd>該当するファイルがフォントであることを示します。</dd>
+
+  <dt>データが消失するファイル<span class="level stop">停止</span></dt>
+  <dd>フォントとは認識できないものの、同じようにリソースフォークだけにデータがあるファイルです。ファイルの種類の情報を失ったフォントも、この表示になります。</dd>
+</dl>
+<p>これらのファイルを含むときは、DTP Zipperを使わず、Finderの「圧縮」で圧縮してください。名前を直しても解決しません。</p>
+<div class="warning">
+  <strong>注意</strong>
+  Finderの「圧縮」で作ったZIPファイルでは、フォントは壊れません。ただし、Windowsで解凍するとリソースフォークが消失して、空のファイルになります。
+</div>
+<div class="note">
+  <strong>メモ</strong>
+  OpenType（.otf）やTrueType（.ttf）のように、データフォークにデータを持つフォントは問題なく圧縮できます。
+</div>
+</body>
+</html>
